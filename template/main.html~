@@ -5,7 +5,7 @@
 <title>{% block title%}{% endblock %}</title>
 </head>
 <body>
-<form action ="API.py" methods="POST","GET">
+<form action ="flask.py" methods="POST","GET">
 <div id="content">
 <input type = "text" placeholder="Input a state.">
 <input type = "submit" value= "Submit">
