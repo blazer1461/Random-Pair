@@ -11,8 +11,8 @@ def census_taker():
         return render_template("base.html", galaxy= "Nothing yet", label= temp)
     elif request.method == "POST":
         tracking= request.form["Select_galaxies"]
-        d= extract.extract_distly(tracking)
-        return render_template("answer.html", galaxy= "Galaxy", answer= d)
+        d= extract.select_galax(tracking)
+        return render_template("answer.html", galaxy= "Galaxy", answer= d, label= temp)
 
 if __name__ == "__main__":
 
