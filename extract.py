@@ -13,7 +13,7 @@ def extract_labels():
     return label
 
 
-def extract_distly(c):
+def extract_distly():
     galax_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/local_groups')
     galax_info = galax_url.read()
     galax_params = js.loads(galax_info)
