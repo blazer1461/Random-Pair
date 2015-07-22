@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>{{galaxy}}</title>
+    </head>
+    <body>
+    <form action="/" method="post">
+        <select name="Select_galaxies">
+            {% for i in range (label|length) %}
+            <option value="{{label[i]}}">{{label[i]}}</option>
+            {% endfor %}
+        </select>
+    </form>
+    <br>
+    <br>
+    {% block content %}
+    {% endblock %}
+    </body>
+    </html>
