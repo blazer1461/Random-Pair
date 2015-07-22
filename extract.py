@@ -26,7 +26,7 @@ def extract_distly():
     
 
 
-<<<<<<< HEAD
+
 
 label_list = extract_labels() 
 dist_list = extract_distly()
@@ -34,12 +34,6 @@ galax_dict = {}
 
 def extract_dict():
     len_label = range(len(label_list))
-=======
-#print extract_distly("M 32")
-# def galax_dict():
-#     label_list = extract.extract[0] 
-#     dist_list = extract.extract[1]
->>>>>>> 53aee4048c78833ed332d73ba7dc7842fd1da58c
     
     for x in len_label:
         galax_dict[label_list[x]]=(dist_list[x])
