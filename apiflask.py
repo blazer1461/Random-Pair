@@ -15,7 +15,7 @@ def census_taker():
         try:
             aging= float(request.form["age"])
         except:
-            return render_template("base.html", galaxy= "Nothing yet", label= temp)
+            return render_template("base.html", galaxy= "Please enter a correct age", label= temp)
         d= extract.select_galax(tracking)
         e= time_calc.time(float(d))
         total_time= e - float(aging)
