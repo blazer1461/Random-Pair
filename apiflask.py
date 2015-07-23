@@ -21,7 +21,7 @@ def census_taker():
         total_time= e - float(aging)
 
 
-        return render_template("answer.html", galaxy= tracking, answer= float(d), label= temp, answer2= e, age= total_time)
+        return render_template("answer.html", galaxy= tracking, answer= float(d), label= temp, answer2= e, age= total_time, galaxyinfo= "Galaxy")
 
 if __name__ == "__main__":
 
