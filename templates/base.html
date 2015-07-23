@@ -5,7 +5,8 @@
         <link rel= "stylesheet" type= "text/css" href= "/static/static.css">
     </head>
 
-    <body background="/static/Space.jpg">
+    <body>
+
     <form action="/" method="POST">
         <select name="Select_galaxies">
             {% for i in range (label|length) %}
@@ -13,11 +14,14 @@
             {% endfor %}
         </select>
         <input type="submit" value="submit">
+        <br>
+        <input type="text" name="age" placeholder="Enter your age">
     </form>
     <br>
 
+
     <div id="title">
-        <b><u>{{galaxy}}</u></b>
+        <b><u>Galaxy {{galaxy}}</u></b>
         </div>
 
     <br>

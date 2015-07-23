@@ -5,11 +5,21 @@
     margin-right: auto;
 	text-align: center;}
 #title{
-
+    font-size: larger;
     margin-left: auto;
     margin-right: auto;
 	text-align: center;}
 
+#life{
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+    font-size: large;
+}
+
 body {
-    background-image: url("file://PATH-TO/images.jpg");
-    background-repeat: repeat-x;}
+    background-image: url("galaxy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

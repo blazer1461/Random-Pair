@@ -12,9 +12,12 @@ def census_taker():
         return render_template("base.html", galaxy= "Nothing yet", label= temp)
     elif request.method == "POST":
         tracking= request.form["Select_galaxies"]
+        aging= request.form["age"]
         d= extract.select_galax(tracking)
         e= time_calc.time(float(d))
-        return render_template("answer.html", galaxy= tracking, answer= float(d), label= temp, answer2= e)
+        total_time= e - float(aging)
+
+        return render_template("answer.html", galaxy= tracking, answer= float(d), label= temp, answer2= e, age= total_time)
 
 if __name__ == "__main__":
 
