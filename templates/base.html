@@ -1,20 +1,30 @@
 <!DOCTYPE html>
     <html>
     <head>
-    <title>{{galaxy}}</title>
+    <title>Galaxy: {{galaxy}}</title>
+        <link rel= "stylesheet" type= "text/css" href= "/static/static.css">
     </head>
-    <body>
+
+    <body background="/static/Space.jpg">
     <form action="/" method="POST">
         <select name="Select_galaxies">
             {% for i in range (label|length) %}
-            <option value="{{label[i]}}">{{label[i]}}</option>
+            <option {% if galaxy==label[i]: %} selected {% endif %} value="{{label[i]}}">{{label[i]}}</option>
             {% endfor %}
         </select>
         <input type="submit" value="submit">
     </form>
     <br>
+
+    <div id="title">
+        <b><u>{{galaxy}}</u></b>
+        </div>
+
     <br>
+    <br>
+     <div id="galaxy">
     {% block content %}
     {% endblock %}
+        </div>
     </body>
     </html>

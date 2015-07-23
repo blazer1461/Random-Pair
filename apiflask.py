@@ -1,4 +1,5 @@
 import extract
+import time_calc
 from flask import Flask, request, render_template
 
 orbit= Flask (__name__)
@@ -12,7 +13,8 @@ def census_taker():
     elif request.method == "POST":
         tracking= request.form["Select_galaxies"]
         d= extract.select_galax(tracking)
-        return render_template("answer.html", galaxy= "Galaxies", answer= float(d), label= temp)
+        e= time_calc.time(float(d))
+        return render_template("answer.html", galaxy= tracking, answer= float(d), label= temp, answer2= e)
 
 if __name__ == "__main__":
 

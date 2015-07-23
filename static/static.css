@@ -1,0 +1,15 @@
+#galaxy{
+    background-color: #FFC53A;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;}
+#title{
+
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;}
+
+body {
+    background-image: url("file://PATH-TO/images.jpg");
+    background-repeat: repeat-x;}
